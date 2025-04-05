@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#user-registration">Register</a></li>
+                <li><a href="#habit-creation">Create Habits</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="user-registration">
+            <h2>User Registration</h2>
+            <p>Create an account to start tracking your habits!</p>
+            <form id="registration-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="habit-creation">
+            <h2>Habit Creation</h2>
+            <p>Organize your habits and stay on track:</p>
+            <div>
+                <input type="text" id="habit-name" placeholder="New Habit" required>
+                <button id="add-habit">Add Habit</button>
+            </div>
+            <ul id="habit-list">
+                <!-- Habits will appear here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Final Project</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
