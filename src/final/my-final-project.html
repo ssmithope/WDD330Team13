@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habit Tracker</title>
+    <title>Creative Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Habit Tracker</h1>
+        <h1>Creative Dashboard</h1>
         <nav>
             <ul>
                 <li><a href="#user-registration">Register</a></li>
-                <li><a href="#habit-creation">Create Habits</a></li>
+                <li><a href="#weather-dashboard">Weather Dashboard</a></li>
+                <li><a href="#currency-converter">Currency Converter</a></li>
+                <li><a href="#joke-generator">Random Joke Generator</a></li>
+                <li><a href="#task-tracker">Task Tracker</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- User Registration -->
         <section id="user-registration">
             <h2>User Registration</h2>
-            <p>Create an account to start tracking your habits!</p>
+            <p>Register to use all features:</p>
             <form id="registration-form">
                 <input type="text" id="username" placeholder="Username" required>
                 <input type="email" id="email" placeholder="Email" required>
@@ -28,20 +32,46 @@
             </form>
         </section>
 
-        <section id="habit-creation">
-            <h2>Habit Creation</h2>
-            <p>Organize your habits and stay on track:</p>
-            <div>
-                <input type="text" id="habit-name" placeholder="New Habit" required>
-                <button id="add-habit">Add Habit</button>
-            </div>
-            <ul id="habit-list">
-                <!-- Habits will appear here -->
-            </ul>
+        <!-- Weather Dashboard -->
+        <section id="weather-dashboard">
+            <h2>Weather Dashboard</h2>
+            <button id="get-weather">Get Weather</button>
+            <div id="weather-result"></div>
+        </section>
+
+        <!-- Currency Converter -->
+        <section id="currency-converter">
+            <h2>Currency Converter</h2>
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="currency-from">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <select id="currency-to">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+            </select>
+            <button id="convert-currency">Convert</button>
+            <div id="conversion-result"></div>
+        </section>
+
+        <!-- Joke Generator -->
+        <section id="joke-generator">
+            <h2>Random Joke Generator</h2>
+            <button id="get-joke">Get Joke</button>
+            <div id="joke-display"></div>
+        </section>
+
+        <!-- Task Tracker -->
+        <section id="task-tracker">
+            <h2>Task Tracker</h2>
+            <input type="text" id="new-task" placeholder="New Task">
+            <button id="add-task">Add Task</button>
+            <ul id="task-list"></ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 My Final Project</p>
+        <p>&copy; 2025 Creative Dashboard</p>
     </footer>
     <script src="script.js"></script>
 </body>

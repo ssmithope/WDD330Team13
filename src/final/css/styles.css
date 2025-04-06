@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f9fc;
+    background-color: #f4f4f9;
 }
 
 header {
-    background-color: #34495e;
+    background-color: #5cb85c;
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 10px;
 }
 
 nav a {
@@ -31,29 +31,22 @@ section {
     margin: 20px auto;
     padding: 20px;
     max-width: 600px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-input, button {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
+    background-color: #ffffff;
     border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 button {
-    background-color: #1abc9c;
+    background-color: #5cb85c;
     color: white;
     border: none;
+    padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #16a085;
+    background-color: #4cae4c;
 }
 
 ul {
@@ -61,9 +54,9 @@ ul {
     padding: 0;
 }
 
-ul li {
+li {
     margin: 5px 0;
     padding: 10px;
-    background: #ecf0f1;
+    background-color: #f9f9f9;
     border-radius: 5px;
 }
